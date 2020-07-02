@@ -32,3 +32,5 @@ Los nombres de las columnas son:
 
 Para poder calcular el campo **RECURRENCIA DONATIVOS** (pág. 19 [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf) ) se deberán aportar los ficheros entregados a la Agencia Tributaria en el ejercicio del año anterior, y el de hace 2 años.
 
+#### Version web
+https://sscalvo.github.io/jupyter_modelo182/
