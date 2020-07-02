@@ -1,37 +1,34 @@
 ## Generador del Modelo 182 a partir de CSV
 
-You can use the [editor on GitHub](https://github.com/sscalvo/jupyter_modelo182/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+El Modelo 182 de la AE (Agencia Tributaria) es una _declaración informativa en la que se relacionan los donativos, donaciones y aportaciones recibidas que den derecho a deducción por el Impuesto sobre la Renta de las Personas Físicas, por el Impuesto sobre Sociedades o por el Impuesto sobre la Renta de no Residentes._
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+En este repositorio *jupyter_modelo182* contiene un prototipado rápido en un Cuaderno Jupyter (Jupyter Notebook) con el que se transformar un CSV con campos prefijados<sup>1</sup>, al correspondiente modelo 182, tal y como está definido en el documento [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf)
 
-### Markdown
+### Como ejecutarlo
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Si no te preocupa la privacidad de tus datos, puedes abrir y ejecutar este *Jupyter notebook* en Google Colab (un entorno de ejecución online). Para ello, haz click en este enlace: [jupyter_modelo182 en colab](https://colab.research.google.com/github/sscalvo/jupyter_modelo182/blob/master/modelo182.ipynb). Deberás subir tu fichero CSV y en el código, actualizar el nuevo nombre del fichero subido:
 
 ```markdown
-Syntax highlighted code block
+#LOAD CSV:
+df = pd.read_csv(r".\modelo182\Reporte_279_1579686916.csv") 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Si los datos de tu CSV son sensibles, necesitarás instalarte un kernel IPython (capaz de ejecutar el código Python de tu cuaderno Jupyter) en tu máquina local. La opción mas sencilla es usar [Anaconda](https://docs.anaconda.com/anaconda/install/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sscalvo/jupyter_modelo182/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Estructura del CSV
 
-### Support or Contact
+Los nombres de las columnas son: 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- **National Id"** El documento de identificación. Cualquier dato que no pase la validación de DNI o NIE será exportado como 9 caracteres en blanco
+- **Family Name** Apellidos. Serán exportados en MAYUSCULAS
+- **Given Name** Nombre. Será exportado en MAYUSCULAS
+- **Tax State** Ciudad. Serán exportados de acuerdo a la tabla de la pág.12 del documento [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf)
+- **Donation Amount** Cantidad donada. 
+- **Currency** Moneda usada en la donación
+
+### Cálculo de la recurrencia de las donaciones
+
+Para poder calcular el campo **RECURRENCIA DONATIVOS** (pág. 19 [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf) ) se deberán aportar los ficheros entregados a la Agencia Tributaria en el ejercicio del año anterior, y el de hace 2 años.
+
