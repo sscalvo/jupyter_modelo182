@@ -2,7 +2,7 @@
 
 El Modelo 182 de la AE (Agencia Tributaria) es una _declaración informativa en la que se relacionan los donativos, donaciones y aportaciones recibidas que den derecho a deducción por el Impuesto sobre la Renta de las Personas Físicas, por el Impuesto sobre Sociedades o por el Impuesto sobre la Renta de no Residentes._
 
-En este repositorio *jupyter_modelo182* contiene un prototipado rápido en un Cuaderno Jupyter (Jupyter Notebook) con el que se transformar un CSV con campos prefijados<sup>1</sup>, al correspondiente modelo 182, tal y como está definido en el documento [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf)
+En este repositorio *jupyter_modelo182* contiene un Cuaderno Jupyter (Jupyter Notebook) con el que poder transformar un CSV (con datos de donantes, cantidades, etc) en su  correspondiente **Modelo 182**, tal y como está definido en el documento de la Agencia Tributaria [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf)
 
 ### Como ejecutarlo
 
