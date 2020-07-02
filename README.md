@@ -21,7 +21,7 @@ Si los datos de tu CSV son sensibles, necesitarás instalarte un kernel IPython 
 
 Los nombres de las columnas son: 
 
-- **National Id"** El documento de identificación. Cualquier dato que no pase la validación de DNI o NIE será exportado como 9 caracteres en blanco
+- **National Id** El documento de identificación. Cualquier dato que no pase la validación de DNI o NIE será exportado como 9 caracteres en blanco
 - **Family Name** Apellidos. Serán exportados en MAYUSCULAS
 - **Given Name** Nombre. Será exportado en MAYUSCULAS
 - **Tax State** Ciudad. Serán exportados de acuerdo a la tabla de la pág.12 del documento [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf)
@@ -33,4 +33,4 @@ Los nombres de las columnas son:
 Para poder calcular el campo **RECURRENCIA DONATIVOS** (pág. 19 [DR182_2016.pdf](https://www.agenciatributaria.es/static_files/Sede/Disenyo_registro/DR_100_199/archivos/DR182_2016.pdf) ) se deberán aportar los ficheros entregados a la Agencia Tributaria en el ejercicio del año anterior, y el de hace 2 años.
 
 #### Version web
-https://sscalvo.github.io/jupyter_modelo182/
+[https://sscalvo.github.io/jupyter_modelo182/](https://sscalvo.github.io/jupyter_modelo182/)
