@@ -1,53 +1,53 @@
-Provincia	Codigo
-Araba/Álava	01
-Albacete	02
-Alicante/Alacant	03
-Almería	04
-Ávila	05
-Badajoz	06
-Balears, Illes	07
-Barcelona	08
-Burgos	09
-Cáceres	10
-Cádiz	11
-Castellón/Castelló	12
-Ciudad Real	13
-Córdoba	14
-Coruña, A	15
-Cuenca	16
-Girona	17
-Granada	18
-Guadalajara	19
-Gipuzkoa/Guipúzcoa	20
-Huelva	21
-Huesca	22
-Jaén	23
-León	24
-Lleida	25
-La Rioja	26
-Lugo	27
-Madrid	28
-Málaga	29
-Murcia	30
-Navarra	31
-Ourense	32
-Asturias	33
-Palencia	34
-Las Palmas	35
-Pontevedra	36
-Salamanca	37
-Santa Cruz de Tenerife	38
-Cantabria	39
-Segovia	40
-Sevilla	41
-Soria	42
-Tarragona	43
-Teruel	44
-Toledo	45
-Valencia/València	46
-Valladolid	47
-Bizkaia/Vizcaya	48
-Zamora	49
-Zaragoza	50
-Ceuta	51
-Melilla	52
+Provincia	Codigo	CAutonoma
+Araba/Álava	01	00
+Albacete	02	07
+Alicante/Alacant	03	17
+Almería	04	01
+Ávila	05	08
+Badajoz	06	10
+Balears, Illes	07	04
+Barcelona	08	09
+Burgos	09	08
+Cáceres	10	10
+Cádiz	11	01
+Castellón/Castelló	12	17
+Ciudad Real	13	07
+Córdoba	14	01
+Coruña, A	15	11
+Cuenca	16	07
+Girona	17	09
+Granada	18	01
+Guadalajara	19	07
+Gipuzkoa/Guipúzcoa	20	00
+Huelva	21	01
+Huesca	22	02
+Jaén	23	01
+León	24	08
+Lleida	25	09
+La Rioja	26	16
+Lugo	27	11
+Madrid	28	12
+Málaga	29	01
+Murcia	30	13
+Navarra	31	00
+Ourense	32	11
+Asturias	33	03
+Palencia	34	08
+Las Palmas	35	05
+Pontevedra	36	11
+Salamanca	37	08
+Santa Cruz de Tenerife	38	05
+Cantabria	39	06
+Segovia	40	08
+Sevilla	41	01
+Soria	42	08
+Tarragona	43	09
+Teruel	44	02
+Toledo	45	07
+Valencia/València	46	17
+Valladolid	47	08
+Bizkaia/Vizcaya	48	00
+Zamora	49	08
+Zaragoza	50	02
+Ceuta	51	00
+Melilla	52	00
