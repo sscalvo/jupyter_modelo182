@@ -6,11 +6,15 @@ Este repositorio *jupyter_modelo182* contiene un Cuaderno Jupyter (Jupyter Noteb
 
 ### Como ejecutarlo
 
-Si no te preocupa la privacidad de tus datos, puedes abrir y ejecutar este *Jupyter notebook* en Google Colab (un entorno de ejecución online). Para ello, haz click en este enlace: [jupyter_modelo182 en colab](https://colab.research.google.com/github/sscalvo/jupyter_modelo182/blob/master/modelo182.ipynb). Deberás subir tu fichero CSV y en el código, actualizar el nuevo nombre del fichero subido:
+Si no te preocupa la privacidad de tus datos, puedes abrir y ejecutar este *Jupyter notebook* en Google Colab (un entorno de ejecución online). Para ello, haz click en este enlace: [jupyter_modelo182 en colab](https://colab.research.google.com/github/sscalvo/jupyter_modelo182/blob/master/modelo182.ipynb). Deberás subir tu fichero CSV y en el código, actualizar los valores de las constantes que definen los distintos ficheros necesarios (a saber, el listado csv de donaciones de este año, y los ficheros ya enviados el año pasado y el anterior a Hacienda):
 
 ```markdown
 #LOAD CSV:
-df = pd.read_csv(r".\modelo182\Reporte_279_1579686916.csv") 
+
+DIR_DATOS                           = "modelo182"
+FICHERO_CSV_ANIO_ACTUAL             = "calm4_dana_2019.csv"
+FICHERO_EXPORTACION_ANIO_ANTERIOR   = "exportacion_2018.txt"
+FICHERO_EXPORTACION_ANIO_ANTERIOR_2 = "exportacion_2017.txt"
 
 ```
 
